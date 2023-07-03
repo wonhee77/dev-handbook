@@ -1,5 +1,5 @@
 # Executors
-__`Executors`__는 `Executor`를 상속 및 구현하고 있는 `ExceutorService`, `ScheduledExecutorService`
+`Executors`는 `Executor`를 상속 및 구현하고 있는 `ExceutorService`, `ScheduledExecutorService`
 그리고 같이 사용되는 `ThreadFactory`, `Callable` 클래스들을 쉽게 구현할 수 있도록 도와주는 팩토리 메소드와 유틸리티 메소드를 제공하는 클래스이다.
 
 팩토리 메소드들을 통해 자주 사용되는 `ExecutorService`을 쉽게 사용할 수 있도록 도와준다.  
@@ -11,13 +11,13 @@ __`Executors`__는 `Executor`를 상속 및 구현하고 있는 `ExceutorService
 `Executors`를 살펴보기 앞서서 지금부터 살펴볼 4가지 메소드는 결국 `ThreadPoolExecutor`를 생성하는 factory method이다.  
 아래는 ThreadPoolExecutor의 기본 생성자이다. 생성자를 통해 각 파라미터들의 의미만 간단히 확인하고 넘어가자.
 ``` java
-	 public ThreadPoolExecutor(int corePoolSize,  // 최소 thread 개수
-                              int maximumPoolSize, // 최대 thread 개수
-                              long keepAliveTime, // thread가 corePoolSize를 초과한 경우 종료되기 전까지의 시간
-                              TimeUnit unit, // keepAliveTime의 단위
-                              BlockingQueue<Runnable> workQueue, // task가 실행하기 전 저장되는 queue
-                              ThreadFactory threadFactory, // executor가 thread를 생성할 때 쓰는 factory class
-                              RejectedExecutionHandler handler) // thread나 queue 용량이 초과했을 경우 불리는 handler
+    public ThreadPoolExecutor(int corePoolSize,  // 최소 thread 개수
+        int maximumPoolSize, // 최대 thread 개수
+        long keepAliveTime, // thread가 corePoolSize를 초과한 경우 종료되기 전까지의 시간
+        TimeUnit unit, // keepAliveTime의 단위
+        BlockingQueue<Runnable> workQueue, // task가 실행하기 전 저장되는 queue
+        ThreadFactory threadFactory, // executor가 thread를 생성할 때 쓰는 factory class
+        RejectedExecutionHandler handler) // thread나 queue 용량이 초과했을 경우 불리는 handler
 ```
 <br>
 <br>
