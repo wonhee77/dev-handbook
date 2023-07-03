@@ -1,5 +1,5 @@
 # Validation
-**`Validation`**은 `Bean Validation API이라는 자바의 표준 어노테이션`을 사용한다.  
+`Validation`은 `Bean Validation API이라는 자바의 표준 어노테이션`을 사용한다.  
 Spring에서는 이 Bean Validation API를 통해 Controller로 들어오는 http 요청에 대해 validation 기능을 지원한다.  
 'org.springframework.boot:spring-boot-starter-validation' 의존성을 추가하면  
 jakarta의 'jakarta.validation:jakarta.validation-api:3.0.0' 그리고 스프링에서 선택한 구현체인  
@@ -8,7 +8,7 @@ jakarta의 'jakarta.validation:jakarta.validation-api:3.0.0' 그리고 스프링
 http 요청에 대한 validation을 사용하려면 contorller에서 @RequestBody에 @Valid라는 어노테이션이 필요하고,  
 DTO의 필드에 아래의 어노테이션을 붙여주면 된다.
 
-##1. 종류
+## 1. 종류
 ### 1. Null 관련
 @Null(message="") // null만 허용  
 @NotNull(message="") // null 허용 X,  "", " "는 허용  
