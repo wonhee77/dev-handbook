@@ -28,7 +28,7 @@
 각 버전간의 호환성도 확인을 해야되기 때문에 어려운 점이 많았다.   
 스프링 부트에서는 io.spring.dependency-management 라는 플러그인을 사용하면 버전을 알아서 관리할 수 있도록 해준다.  
 버전을 입력하지 않더라도 스프링에서 호환성을 고려하여 버전을 주입해준다.   
-또한 'org.springframework.boot:spring-boot-starter~' 라는 것만 주입 받으면 필요한 라이브러리들을 
+또한 'org.springframework.boot:spring-boot-starter-' 라는 Starter 모듈을 통해 필요한 라이브러리들을 
 한 번에 가져와 사용할 수 있다.  
 
    
